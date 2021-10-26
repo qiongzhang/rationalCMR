@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/usr/people/qiongz/.conda/envs/myenv/lib/python3.5/site-packages/bayes_opt/target_space.py", line 191, in probe
+    target = self._cache[_hashable(x)]
+KeyError: (0.417022004702574, 0.7203244934421581, 0.0, 0.30233257263183977)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/people/qiongz/submisions/optimalfreerecall/CMR_prob/main_optimalCMRprob_rep.py", line 50, in <module>
+    main()
+  File "/usr/people/qiongz/submisions/optimalfreerecall/CMR_prob/main_optimalCMRprob_rep.py", line 45, in main
+    n_iter = 100, # number of evaluations using bayesian optimization
+  File "/usr/people/qiongz/.conda/envs/myenv/lib/python3.5/site-packages/bayes_opt/bayesian_optimization.py", line 174, in maximize
+    self.probe(x_probe, lazy=False)
+  File "/usr/people/qiongz/.conda/envs/myenv/lib/python3.5/site-packages/bayes_opt/bayesian_optimization.py", line 112, in probe
+    self._space.probe(params)
+  File "/usr/people/qiongz/.conda/envs/myenv/lib/python3.5/site-packages/bayes_opt/target_space.py", line 194, in probe
+    target = self.target_func(**params)
+  File "/mnt/bucket/people/qiongz/submisions/optimalfreerecall/CMR_prob/fitpatterns_opt_drift.py", line 1773, in obj_func_acc_rep
+    params=param_dict, subj_id_path=subjects_path, sep_files=False)   
+  File "/mnt/bucket/people/qiongz/submisions/optimalfreerecall/CMR_prob/pyCMR2s_reminder.py", line 858, in run_CMR2
+    params)
+  File "/mnt/bucket/people/qiongz/submisions/optimalfreerecall/CMR_prob/pyCMR2s_reminder.py", line 777, in run_CMR2_singleSubj
+    = this_CMR.recall_session()
+  File "/mnt/bucket/people/qiongz/submisions/optimalfreerecall/CMR_prob/pyCMR2s_reminder.py", line 412, in recall_session
+    plt.subplot(5,2,idx+1)
+  File "/usr/people/qiongz/.conda/envs/myenv/lib/python3.5/site-packages/matplotlib/pyplot.py", line 1083, in subplot
+    a = fig.add_subplot(*args, **kwargs)
+  File "/usr/people/qiongz/.conda/envs/myenv/lib/python3.5/site-packages/matplotlib/figure.py", line 1370, in add_subplot
+    a = subplot_class_factory(projection_class)(self, *args, **kwargs)
+  File "/usr/people/qiongz/.conda/envs/myenv/lib/python3.5/site-packages/matplotlib/axes/_subplots.py", line 60, in __init__
+    ).format(maxn=rows*cols, num=num))
+ValueError: num must be 1 <= num <= 10, not 11

@@ -1,0 +1,34 @@
+These experiments studied serial postion effects under conditions
+designed to minimize rehearsal.  Experiment 1 has immediate and delayed 
+free recall.  Experiment 2 has continuous distractor free recall
+in 4 conditions that vary in the length of the IPI.  For further
+information, analysis code, contact Marc Howard.
+
+The format of the data here is as follows:
+
+    Each trial has five lines.
+    The first line gives 
+	Subject trial cumulative_trial	(Experiment 1)
+	Subject session trial condition		(Experiment 2)
+    The second line gives the indices of the words in the list in the Toronto Noun Pool.
+    The third line gives the serial position of each response.    
+    The fourth line gives the index in the Toronto Noun Pool of the response.
+    The fifth line gives the IRT in ms.
+
+    A serial position of -99 means the response was not presented to the
+	subject in that session.
+    A serial position of -n (Experiment 1) means that the response was
+	presented n lists prior.
+    A serial position of -n x 100 -m (Experiment 2) means that the response
+	was presented n lists back, where it occupied serial position m.
+    A noun pool index of 481 is an extra-list intrusion.
+    
+Files:
+
+Immed.dat  Experiment 1, immediate.
+Delay.dat  Experiment 1, delayed.
+
+Experiment 2: Ltr0.dat, Ltr1.dat, Ltr2.dat, Ltr3.dat are IPI conditions 0, 2, 8 and 16 s respectively.
+
+ltr-nounpool.txt is the nounpool used in this study.
+
